@@ -1,0 +1,132 @@
+/* Import Fonts Here */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+/* CSS Reset  */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/* CSS Custom Layout */
+body {
+	max-width: 80vw;
+	height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+h1 {
+	margin: 2rem 0;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin: 0 auto;
+	height: 50%;
+}
+
+.box {
+	padding: 2rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 0.125em;
+	border: #333 solid 1px;
+}
+
+.bio__container {
+	margin-top: 3rem;
+}
+
+.bio__description {
+	margin-top: 2rem;
+}
+
+/* CSS Code Start Here! */
+.box1 {
+	text-transform: uppercase;
+    background: #fceae4;
+}
+
+.box2 {
+    text-transform: lowercase;
+    background: #ffd300;
+}
+
+.box3 {
+    background: #FEC4BE;
+}
+
+.box4 {
+    background: #FFB8E6;
+}
+
+.box5 {
+    background: #00e7c9;
+}
+
+.box6 {
+    background: #66E0FF;
+}
+
+.bio__name {
+    font-size: 1.75rem;
+}
+
+.bio__description {
+    font-size: 1.25rem;
+}
+
+html {
+    font-family: "Funnel Display", sans-serif;
+}
+
+.box {
+    border: 0;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px #aa7866;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.box1::after {
+    content: "!!!";
+}

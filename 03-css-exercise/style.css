@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --clr-black: rgb(0, 23, 37);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.img__container {
+    display: grid;
+    place-items: center;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 2rem;
+    box-shadow: 1.25rem 1.25rem 0 #0074b9;
+    margin: 0 1.25rem 1.25rem 0;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: var(--clr-black);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+    outline: 2px solid var(--clr-black);
+    border-radius: 10px;
+    box-shadow: .3rem .3rem 0 var(--clr-black);
+    background: rgb(128, 185, 220);
+    padding: .7rem 1.5rem;
+}
