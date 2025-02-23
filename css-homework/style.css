@@ -79,15 +79,12 @@ main {
     color: var(--clr-white);
     font-size: 2.75rem;
     font-weight: 800;
+    font-variant-numeric: tabular-nums;
     line-height: 1;
     border-radius: 20px;
     background: var(--clr-blue);
     padding: .7rem;
     margin-bottom: .5rem;
-}
-
-.stats--text-space {
-    font-variant-numeric: tabular-nums;
 }
 
 .stats--green {
@@ -181,7 +178,7 @@ button {
     }
 }
 
-@media (768 < width <= 1280px) {
+@media (768px < width <= 1280px) {
     .head {
         max-width: 65%;
     }
