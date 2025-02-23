@@ -100,7 +100,7 @@ main {
 }
 
 .text--width {
-    width: max(90%, 80%);
+    width: 90%;
 }
 
 .stats--text-lg {
