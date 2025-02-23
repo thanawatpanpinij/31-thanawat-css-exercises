@@ -35,8 +35,6 @@ main {
 }
 
 .head {
-    max-width: 80%;
-
     h1 {
         font-size: 1rem;
         font-weight: 700;
@@ -45,9 +43,9 @@ main {
     }
 
     p {
-        max-width: 40ch;
+        width: 33ch;
         font-size: 2.25rem;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 1;
         letter-spacing: 1px;
         margin-bottom: 2.5rem;
@@ -61,7 +59,7 @@ main {
 
     h2 {
         font-size: 2.3rem;
-        font-weight: 800;
+        font-weight: 700;
         margin-bottom: 1.25rem;
     }
 
@@ -101,25 +99,28 @@ main {
     padding: .5rem 0;
 }
 
+.text--width {
+    width: max(90%, 80%);
+}
 
 .stats--text-lg {
-    font-size: 3.25rem;
+    font-size: 4rem;
 }
 
 .stats--text-md {
-    font-size: 2.75rem;
+    font-size: 3.25rem;
 }
 
 .stats + p,
 .impact__durability .container p:last-of-type {
-    font-size: 1.1rem;
-    font-weight: 800;
+    font-size: 1.05rem;
+    font-weight: 700;
 }
 
 .impact__durability-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
+    gap: 1rem;
 
     .stats__container {
         display: flex;
