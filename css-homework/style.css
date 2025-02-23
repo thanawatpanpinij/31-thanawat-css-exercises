@@ -57,7 +57,7 @@ main {
 .impact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    column-gap: 2rem;
 
     h2 {
         font-size: 2.3rem;
@@ -65,7 +65,7 @@ main {
         margin-bottom: 1.25rem;
     }
 
-    h2+p {
+    h2 + p {
         letter-spacing: -0.5px;
     }
 }
@@ -113,26 +113,10 @@ main {
     font-size: 2.75rem;
 }
 
-.stats+p,
+.stats + p,
 .impact__durability .container p:last-of-type {
     font-size: 1.1rem;
     font-weight: 800;
-}
-
-.impact__breadth button {
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 700;
-    border: 2px solid var(--clr-black);
-    border-radius: 10px;
-    box-shadow: 3px 4px 0 var(--clr-black);
-    background: var(--clr-white);
-    margin-top: 2rem;
-    padding: .75rem 2rem .75rem 1.5rem;
-
-    &:hover {
-        background: var(--clr-hover);
-    }
 }
 
 .impact__durability-stats {
@@ -151,7 +135,53 @@ main {
     }
 }
 
-@media (width <=1280px) {
+button {
+    cursor: pointer;
+    max-width: 180px;
+    font-size: 1rem;
+    font-weight: 800;
+    border: 2px solid var(--clr-black);
+    border-radius: 10px;
+    box-shadow: 3px 4px 0 var(--clr-black);
+    background: var(--clr-white);
+    padding: .75rem 0;
+
+    &:hover {
+        background: var(--clr-hover);
+    }
+}
+
+@media (width <= 768px) {
+    .head p {
+        width: 35ch;
+        font-size: 1.6rem;
+    }
+    .impact {
+        display: block;
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+    .impact__breadth {
+        margin-bottom: 2rem;
+    }
+    .stats--text-lg {
+        font-size: 2.75rem;
+    }
+    .stats--text-md {
+        font-size: 2.1rem;
+    }
+    .stats + p,
+    .impact__durability .container p:last-of-type {
+        font-size: 1rem;
+    }
+    button {
+        margin-top: 2rem;
+        padding: .7rem 1rem .7rem .75rem;
+    }
+}
+
+@media (768 < width <= 1280px) {
     .head {
         max-width: 65%;
     }
