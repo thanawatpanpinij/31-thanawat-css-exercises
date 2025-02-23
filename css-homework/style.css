@@ -15,11 +15,11 @@
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-    /* outline: red 1px solid; */
 }
 
 html {
     color: var(--clr-text);
+    line-height: 1.5;
 }
 
 body {
@@ -30,20 +30,25 @@ body {
 }
 
 main {
-    width: min(1200px, 90%);
+    width: min(1200px, 95%);
+    margin: 3rem 0;
 }
 
 .head {
-    max-width: 60%;
+    max-width: 80%;
+
     h1 {
         font-size: 1rem;
         font-weight: 700;
         letter-spacing: 1px;
         margin-bottom: 1.25rem;
     }
+
     p {
+        max-width: 40ch;
         font-size: 2.25rem;
-        font-weight: 700;
+        font-weight: 800;
+        line-height: 1;
         letter-spacing: 1px;
         margin-bottom: 2.5rem;
     }
@@ -53,30 +58,36 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+
     h2 {
         font-size: 2.3rem;
+        font-weight: 800;
         margin-bottom: 1.25rem;
+    }
+
+    h2+p {
+        letter-spacing: -0.5px;
     }
 }
 
-.container:not(.impact__breadth  .container:last-of-type) {
+.container:not(.impact__breadth .container:last-of-type) {
     margin-bottom: 1rem;
-}
-
-.container--w60 {
-    width: 80%;
 }
 
 .stats {
     display: inline-block;
     color: var(--clr-white);
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1;
     border-radius: 20px;
     background: var(--clr-blue);
-    padding: .5rem;
+    padding: .7rem;
     margin-bottom: .5rem;
+}
+
+.stats--text-space {
+    font-variant-numeric: tabular-nums;
 }
 
 .stats--green {
@@ -87,22 +98,25 @@ main {
 .stats--yellow {
     width: 100%;
     text-align: center;
+    letter-spacing: -.5px;
     color: var(--clr-black);
     background: var(--clr-yellow);
     padding: .5rem 0;
 }
 
-.stats--text-md {
+
+.stats--text-lg {
     font-size: 3.25rem;
 }
 
-.stats--text-sm {
+.stats--text-md {
     font-size: 2.75rem;
 }
 
-.stats + p,
+.stats+p,
 .impact__durability .container p:last-of-type {
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 
 .impact__breadth button {
@@ -137,8 +151,16 @@ main {
     }
 }
 
-.impact__breadth > .container:first-of-type,
-.impact__depth > .container:first-of-type,
-.impact__durability > .container:first-of-type {
-    line-height: 1.5;
+@media (width <=1280px) {
+    .head {
+        max-width: 65%;
+    }
+
+    .stats--text-lg {
+        font-size: 3.2rem;
+    }
+
+    .stats--text-md {
+        font-size: 2.75rem;
+    }
 }
