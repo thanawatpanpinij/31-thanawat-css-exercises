@@ -96,7 +96,7 @@ main {
     letter-spacing: -.5px;
     color: var(--clr-black);
     background: var(--clr-yellow);
-    padding: .5rem 0;
+    padding: .5rem;
 }
 
 .text--width {
